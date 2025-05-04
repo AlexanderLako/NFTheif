@@ -4,3 +4,5 @@ Alexander Lako
 Adam Koziak
 Lily Czarnecki
 Noah Wilson
+
+Link to play game: https://kaizoka.itch.io/nfthief
