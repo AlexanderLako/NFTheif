@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://menus/deathScreen.gd" type="Script" id=1]
+
+[node name="deathScreen" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="bg" type="ColorRect" parent="."]
+margin_left = -3781.0
+margin_top = -2254.0
+margin_right = 3559.0
+margin_bottom = 1914.0
+color = Color( 0, 0, 0, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="restart" type="Button" parent="."]
+margin_left = -104.0
+margin_top = -80.0
+margin_right = 104.0
+margin_bottom = -32.0
+text = "Restart"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="menu" type="Button" parent="."]
+margin_left = -104.0
+margin_top = 32.0
+margin_right = 104.0
+margin_bottom = 80.0
+text = "Main Menu"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="menu" to="." method="_on_menu_pressed"]

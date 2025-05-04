@@ -1,0 +1,17 @@
+# Godot-specific ignores
+.import/
+export.cfg
+export_presets.cfg
+
+# Imported translations (automatically generated from CSV files)
+*.translation
+
+# Mono-specific ignores
+.mono/
+data_*/
+
+sprites/standing/standing_left.png.import
+sprites/standing/standing_right.png.import
+sprites/standing/standing_left.png.import
+sprites/standing/standing_right.png.import
+*.import

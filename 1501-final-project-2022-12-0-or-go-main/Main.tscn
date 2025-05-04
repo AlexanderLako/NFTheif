@@ -1,0 +1,92 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Levels/Level1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Levels/Tutorial.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Main.gd" type="Script" id=4]
+[ext_resource path="res://Checkpoint_stuff/Checkpoint.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Levels/Level2.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Levels/Level3.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Levels/Level1-5.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Levels/Level4.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Levels/FinalLevel.tscn" type="PackedScene" id=11]
+
+[node name="Main" type="Node2D"]
+position = Vector2( -7040, 0 )
+script = ExtResource( 4 )
+
+[node name="Tutorial" parent="." instance=ExtResource( 3 )]
+
+[node name="Level1" parent="." instance=ExtResource( 2 )]
+position = Vector2( 14208, 64 )
+
+[node name="Level1-5" parent="." instance=ExtResource( 8 )]
+position = Vector2( 19648, 576 )
+
+[node name="Level2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 30144, 576 )
+
+[node name="Level3" parent="." instance=ExtResource( 7 )]
+position = Vector2( 36480, -64 )
+
+[node name="Level4" parent="." instance=ExtResource( 10 )]
+position = Vector2( 37248, -3264 )
+
+[node name="FinalLevel" parent="." instance=ExtResource( 11 )]
+position = Vector2( 37248, -4352 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 576, 760 )
+
+[node name="Checkpoints" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="L1CheckP" parent="Checkpoints" instance=ExtResource( 5 )]
+position = Vector2( 14216, 832 )
+
+[node name="L1-5CheckP3" parent="Checkpoints" instance=ExtResource( 5 )]
+position = Vector2( 19768, 832 )
+
+[node name="L1-5CheckP4" parent="Checkpoints" instance=ExtResource( 5 )]
+position = Vector2( 22992, 832 )
+
+[node name="L1-5CheckP5" parent="Checkpoints" instance=ExtResource( 5 )]
+position = Vector2( 25136, 832 )
+
+[node name="L2CheckP" parent="Checkpoints" instance=ExtResource( 5 )]
+position = Vector2( 30312, 832 )
+
+[node name="L2CheckP2" parent="Checkpoints" instance=ExtResource( 5 )]
+position = Vector2( 35280, 848 )
+
+[node name="L3CheckP" parent="Checkpoints" instance=ExtResource( 5 )]
+position = Vector2( 36856, 256 )
+
+[node name="L3CheckP2" parent="Checkpoints" instance=ExtResource( 5 )]
+position = Vector2( 37744, -1008 )
+
+[node name="L4CheckP" parent="Checkpoints" instance=ExtResource( 5 )]
+position = Vector2( 37352, -2992 )
+
+[node name="L4CheckP2" parent="Checkpoints" instance=ExtResource( 5 )]
+position = Vector2( 35104, -2432 )
+
+[node name="L4CheckP3" parent="Checkpoints" instance=ExtResource( 5 )]
+position = Vector2( 35488, -3392 )
+
+[node name="L4CheckP4" parent="Checkpoints" instance=ExtResource( 5 )]
+position = Vector2( 38312, -4672 )
+
+[node name="FCheckP" parent="Checkpoints" instance=ExtResource( 5 )]
+position = Vector2( 38552, -5184 )
+
+[node name="FCheckP4" parent="Checkpoints" instance=ExtResource( 5 )]
+position = Vector2( 39552, -5104 )
+
+[node name="FCheckP2" parent="Checkpoints" instance=ExtResource( 5 )]
+position = Vector2( 40448, -6000 )
+
+[node name="FCheckP3" parent="Checkpoints" instance=ExtResource( 5 )]
+position = Vector2( 41752, -6912 )
